@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Garcia College of Technology Admission Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Garcia College of Technology Admission Form</h1>
+    <p>Enter your admission information below</p>
+
+    <form action="save_student.php" method="POST">
+        <!-- Form 1: Personal Information -->
+        <fieldset>
+            <legend>Personal Information</legend>
+            Full Name: <input type="text" name="full_name" required><br><br>
+
+            Birthdate: <input type="date" name="birthdate" required><br><br>
+
+            Gender:
+            <input type="radio" name="gender" value="Male" required> Male
+            <input type="radio" name="gender" value="Female"> Female<br><br>
+
+            Phone Number: <input type="text" name="phone" maxlength="11" required><br><br>
+
+            Email Address: <input type="email" name="email" placeholder="yourname@example.com" required><br><br>
+
+            Street Address: <input type="text" name="street" required><br><br>
+            City: <input type="text" name="city" required><br><br>
+            State/Province: <input type="text" name="state" required><br><br>
+
+            Course:
+            <select name="course" required>
+                <option value="">--Select Course--</option>
+                <option value="BSCE">BS Civil Engineering</option>
+                <option value="BSEE">BS Electrical Engineering</option>
+                <option value="BSME">BS Mechanical Engineering</option>
+                <option value="BSA">BS Accountancy</option>
+                <option value="BSBA">BS Business Administration</option>
+                <option value="BSCS">BS Computer Science</option>
+                <option value="BSIT">BS Information Technology</option>
+                <option value="BSHM">BS Hospitality Management</option>
+                <option value="BSOA">BS Office Administration</option>
+            </select><br><br>
+        </fieldset>
+
+        <!-- Form 2: Education -->
+        <fieldset>
+            <legend>Education</legend>
+            High School: <input type="text" name="high_school" required><br><br>
+            Graduation Date: <input type="date" name="graduation_date" required><br><br>
+            School Address: <input type="text" name="school_address" required><br><br>
+        </fieldset>
+
+        <!-- Form 3: Emergency Contact -->
+        <fieldset>
+            <legend>Emergency Contact</legend>
+            Full Name: <input type="text" name="emergency_name" required><br><br>
+
+            Relationship:
+            <select name="relationship" required>
+                <option value="">--Select Relationship--</option>
+                <option value="Parent">Parent</option>
+                <option value="Sibling">Sibling</option>
+                <option value="Grandparent">Grandparent</option>
+                <option value="Cousin">Cousin</option>
+                <option value="Others">Others</option>
+            </select><br><br>
+
+            Phone Number: <input type="text" name="emergency_phone" maxlength="11" required><br><br>
+        </fieldset>
+
+        <!-- Form 4: Application Fee -->
+        <fieldset>
+            <legend>Application Fee</legend>
+            <p>Payment is due 3 days prior to the start of the class</p>
+            Payment Method:
+            <input type="radio" name="payment_method" value="Credit Card" required> Credit Card
+            <input type="radio" name="payment_method" value="E-Money"> E-Money
+            <input type="radio" name="payment_method" value="In-person"> In-person at school<br><br>
+        </fieldset>
+
+        <!-- Buttons -->
+        <button type="submit">Submit</button>
+        <button type="button" onclick="window.location.href='Admin_Login.html'">Admin</button>
+    </form>
+</body>
+</html>

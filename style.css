@@ -1,0 +1,88 @@
+/* General Page Styling */
+body {
+    background-color: #f9f9f9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #002244;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Headings */
+h1, h2 {
+    color: #003366;
+}
+
+/* Forms */
+form {
+    background-color: white;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="date"],
+input[type="file"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* Buttons */
+button {
+    background-color: #004080;
+    color: white;
+    padding: 10px 18px;
+    margin: 10px 5px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #0066cc;
+    transform: scale(1.05);
+}
+
+/* Custom Containers */
+.dashboard-buttons,
+.student-card,
+.teacher-card {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    form {
+        width: 90%;
+    }
+
+    .teacher-card {
+        width: 90%;
+        margin: 10px auto;
+    }
+}
